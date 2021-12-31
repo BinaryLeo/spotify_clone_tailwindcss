@@ -25,7 +25,7 @@ module.exports = {
         "195%": "195%",
       },
       backgroundPosition: {
-        banner: "46% 4%",
+        "banner": "46% 4%",
         "banner-mobile": "top 25% center",
       },
       fontSize: {
