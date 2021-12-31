@@ -16,12 +16,12 @@
     <header>
       <div class="flex fixed bg-black w-full px-3 md:px-20 py-4">
         <div class="container flex itens-center mx-auto">
-          <div>
+          <div class="items-start ml-12">
             <a href="#">
               <img
                 src="img/spotify-logo.png"
                 alt="Spotify"
-                class="w-20 md:w-125px"
+                class="w-20 md:w-125px "
               />
             </a>
           </div>
@@ -56,44 +56,32 @@
       </div>
     </header>
     <!--CONTENT-->
-    <div
-      class="
-        flex flex-row
-        w-full
-        justify-center
-        text-left
-        bg-green-premium
-        py-40
-        px-8
-      "
-    >
-      <div class="flex-1 w-3/4 px-22">
-        <p
-          class="
-            text-[10px]
-            font-Montserrat font-semibold
-            tracking-widest
-            md:text-sm
-            mb-10
-            mx-auto
-            leading-none
-            px-6
-            text-btn-premium
-          "
-        >
-          SPOTIFY PREMIUM
-        </p>
-        <h1 class="text-4xl md:text-5xl font-black text-btn-premium m-7">
-          Get 3 months of Premium for free
-        </h1>
-        <h2 class="text-2xl text-btn-premium m-7">
-          Enjoy ad-free music listening, offline playback, and more. Cancel
-          anytime.
-        </h2>
+    <div class=" w-full h-screen py-125px mdq:py-20 bg-green-premium ">
+      <div class="item-start selection:bg-green-premium w-2/4 ml-32 mdq:ml-8 mdq:w-5/6 lgq:ml-10 inline-block leading-tight px-2">
+      <p class="text-[12px] text-btn-premium mb-10 font-Montserrat font-semibold tracking-wider ">SPOTIFY PREMIUM</p>
+      <h1 class="font-black text-btn-premium mb-10 text-5xl mdq:text-3xl">Get 3 months of Premium for free</h1>
+      <h2 class="text-2xl text-btn-premium" >
+        Enjoy ad-free music listening, offline playback, and more. Cancel
+        anytime.
+      </h2>
+      <h2 class="mt-12 mb-12">
+        <a
+        href="#"
+        class="ml-0  bg-btn-premium text-green-premium rounded-full text-base
+          px-6 py-3 uppercase font-bold
+        "
+        >GET 3 MONTHS FREE</a>
+      </h2>
+       
+        <h2 class="text-xs text-btn-premium">Individual plan only. $9.99/month after. 
+         <a href="#" class="text-decoration-line: underline">Terms and conditions apply.</a> Open only to users who haven't already tried Premium.
+         Offer ends 31 December 2021.</h2>
       </div>
-      <div class="flex-1 w-1/4 px-4">
-        <img class="w-70 md:w-80" src="./img/premium.png" />
-      </div>
+      <div class=" align-center textbg-green-premium ml-40 inline-block ">
+      <img class=" max-w-xs h-auto mdq:w-64 mdq:h-auto " src="./img/premium.png" />
+    </div>
+    
+    </div> 
     </div>
 
     <div
@@ -102,13 +90,16 @@
         justify-center
         text-center
         bg-spotify-theme-mobile
-        lg:bg-spotify-theme
+        md:bg-spotify-theme
+        xl:bg-spotify-theme
         bg-banner-mobile
         lg:bg-banner lg-195% lg:bg-175%
+        xl:bg-banner xl-195% xl:bg-175%
         bg-purple-main
         text-green-main
         py-12
         px-4
+        min-h-[600px]
       "
     >
       <h1

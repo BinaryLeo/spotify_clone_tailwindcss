@@ -17,7 +17,7 @@ module.exports = {
         "green-premium": "#96F0B6",
       },
       backgroundImage: {
-        "spotify-theme": "url('/img/bursts.svg')",
+        "spotify-theme": "url('/img/bgcontainer.svg')",
         "spotify-theme-mobile": "url('/src/img/bursts-mobile.svg')",
       },
       backgroundSize: {
@@ -31,6 +31,13 @@ module.exports = {
       fontSize: {
         "9xl": "9rem",
       },
+      screens: {
+        'mdq': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+        'smq': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+        'lgq': {'max': '1224px'},
+      }
     },
   },
   variants: {},

@@ -468,26 +468,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
-.m-7{
-  margin: 1.75rem;
-}
-
-.m-8{
-  margin: 2rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.mx-14{
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+.ml-12{
+  margin-left: 3rem;
+}
+
+.ml-32{
+  margin-left: 8rem;
 }
 
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.ml-0{
+  margin-left: 0px;
+}
+
+.ml-40{
+  margin-left: 10rem;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -498,6 +513,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.min-h-\[600px\]{
+  min-height: 600px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -506,36 +533,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 5rem;
 }
 
-.w-2\/3{
-  width: 66.666667%;
+.w-2\/4{
+  width: 50%;
 }
 
-.w-1\/3{
-  width: 33.333333%;
-}
-
-.w-auto{
-  width: auto;
-}
-
-.w-24{
-  width: 6rem;
-}
-
-.w-16{
-  width: 4rem;
-}
-
-.w-3\/4{
-  width: 75%;
-}
-
-.w-1\/4{
-  width: 25%;
-}
-
-.w-36{
-  width: 9rem;
+.max-w-xs{
+  max-width: 20rem;
 }
 
 .max-w-5xl{
@@ -546,20 +549,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 36rem;
 }
 
-.max-w-md{
-  max-width: 28rem;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
 
-.flex-row{
-  flex-direction: row;
-}
-
 .flex-col{
   flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-end{
@@ -597,6 +596,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(150 240 182 / var(--tw-bg-opacity));
 }
 
+.bg-btn-premium{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 47 114 / var(--tw-bg-opacity));
+}
+
 .bg-purple-main{
   --tw-bg-opacity: 1;
   background-color: rgb(45 70 185 / var(--tw-bg-opacity));
@@ -630,19 +634,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.py-40{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+.py-125px{
+  padding-top: 125px;
+  padding-bottom: 125px;
 }
 
-.px-24{
-  padding-left: 6rem;
-  padding-right: 6rem;
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.px-32{
-  padding-left: 8rem;
-  padding-right: 8rem;
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-12{
@@ -653,45 +662,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-40{
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-14{
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.text-left{
-  text-align: left;
 }
 
 .text-center{
@@ -712,13 +682,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
-.text-\[10px\]{
-  font-size: 10px;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-\[12px\]{
+  font-size: 12px;
 }
 
 .text-5xl{
@@ -729,6 +694,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -743,16 +718,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 900;
 }
 
-.font-normal{
-  font-weight: 400;
-}
-
 .uppercase{
   text-transform: uppercase;
 }
 
+.leading-tight{
+  line-height: 1.25;
+}
+
 .leading-none{
   line-height: 1;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
 }
 
 .tracking-widest{
@@ -769,6 +748,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(32 47 114 / var(--tw-text-opacity));
 }
 
+.text-green-premium{
+  --tw-text-opacity: 1;
+  color: rgb(150 240 182 / var(--tw-text-opacity));
+}
+
 .text-green-main{
   --tw-text-opacity: 1;
   color: rgb(30 215 96 / var(--tw-text-opacity));
@@ -777,6 +761,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-purple-main{
   --tw-text-opacity: 1;
   color: rgb(45 70 185 / var(--tw-text-opacity));
+}
+
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.selection\:bg-green-premium *::-moz-selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(150 240 182 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-green-premium *::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(150 240 182 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-green-premium::-moz-selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(150 240 182 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-green-premium::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(150 240 182 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover{
@@ -802,23 +811,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 125px;
   }
 
-  .md\:w-80{
-    width: 20rem;
+  .md\:bg-spotify-theme{
+    background-image: url('/img/bgcontainer.svg');
   }
 
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .md\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-8xl{
@@ -833,15 +832,59 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
-  .lg\:bg-spotify-theme{
-    background-image: url('/img/bursts.svg');
-  }
-
   .lg\:bg-175\%{
     background-size: 175%;
   }
 
   .lg\:bg-banner{
     background-position: 46% 4%;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:bg-spotify-theme{
+    background-image: url('/img/bgcontainer.svg');
+  }
+
+  .xl\:bg-175\%{
+    background-size: 175%;
+  }
+
+  .xl\:bg-banner{
+    background-position: 46% 4%;
+  }
+}
+
+@media (max-width: 767px){
+  .mdq\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .mdq\:h-auto{
+    height: auto;
+  }
+
+  .mdq\:w-5\/6{
+    width: 83.333333%;
+  }
+
+  .mdq\:w-64{
+    width: 16rem;
+  }
+
+  .mdq\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .mdq\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 1224px){
+  .lgq\:ml-10{
+    margin-left: 2.5rem;
   }
 }
