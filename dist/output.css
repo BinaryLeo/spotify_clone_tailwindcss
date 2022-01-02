@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 /*
-! tailwindcss v3.0.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.8 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -79,7 +79,7 @@ hr {
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
-abbr[title] {
+abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
@@ -501,24 +501,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 10rem;
 }
 
-.ml-60{
-  margin-left: 15rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .mt-20{
   margin-top: 5rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
-.mr-6{
-  margin-right: 1.5rem;
-}
-
 .mr-4{
   margin-right: 1rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .inline-block{
@@ -537,10 +533,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-auto{
   height: auto;
 }
@@ -549,8 +541,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.min-h-\[350px\]{
+  min-height: 350px;
+}
+
 .min-h-\[600px\]{
   min-height: 600px;
+}
+
+.min-h-\[400px\]{
+  min-height: 400px;
 }
 
 .w-full{
@@ -721,10 +721,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.align-middle{
-  vertical-align: middle;
-}
-
 .font-Montserrat{
   font-family: Montserrat;
 }
@@ -761,11 +757,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -897,20 +888,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 4 / span 4;
   }
 
-  .md\:ml-5{
-    margin-left: 1.25rem;
-  }
-
-  .md\:ml-2{
-    margin-left: 0.5rem;
-  }
-
   .md\:ml-20{
     margin-left: 5rem;
-  }
-
-  .md\:ml-40{
-    margin-left: 10rem;
   }
 
   .md\:flex{
@@ -921,24 +900,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .md\:h-96{
-    height: 24rem;
-  }
-
-  .md\:h-5\/6{
-    height: 83.333333%;
-  }
-
-  .md\:min-h-\[600px\]{
-    min-height: 600px;
-  }
-
   .md\:w-125px{
     width: 125px;
-  }
-
-  .md\:w-full{
-    width: 100%;
   }
 
   .md\:grid-cols-6{
@@ -962,12 +925,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 5rem;
   }
 
-  .md\:pt-4{
-    padding-top: 1rem;
-  }
-
   .md\:pt-0{
     padding-top: 0px;
+  }
+
+  .md\:pt-4{
+    padding-top: 1rem;
   }
 
   .md\:text-8xl{
@@ -982,14 +945,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
-  .lg\:ml-8{
-    margin-left: 2rem;
-  }
-
-  .lg\:ml-20{
-    margin-left: 5rem;
-  }
-
   .lg\:bg-175\%{
     background-size: 175%;
   }
@@ -1013,25 +968,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 867px){
   .mdq\:ml-8{
     margin-left: 2rem;
   }
 
+  .mdq\:ml-12{
+    margin-left: 3rem;
+  }
+
+  .mdq\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .mdq\:ml-20{
+    margin-left: 5rem;
+  }
+
+  .mdq\:ml-2{
+    margin-left: 0.5rem;
+  }
+
   .mdq\:h-auto{
     height: auto;
-  }
-
-  .mdq\:h-\[600px\]{
-    height: 600px;
-  }
-
-  .mdq\:min-h-\[600px\]{
-    min-height: 600px;
-  }
-
-  .mdq\:min-h-\[800px\]{
-    min-height: 800px;
   }
 
   .mdq\:w-5\/6{
@@ -1042,9 +1001,36 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 16rem;
   }
 
-  .mdq\:py-20{
+  .mdq\:w-auto{
+    width: auto;
+  }
+
+  .mdq\:w-full{
+    width: 100%;
+  }
+
+  .mdq\:pt-6{
+    padding-top: 1.5rem;
+  }
+
+  .mdq\:pt-10{
+    padding-top: 2.5rem;
+  }
+
+  .mdq\:pt-24{
+    padding-top: 6rem;
+  }
+
+  .mdq\:pb-2{
+    padding-bottom: 0.5rem;
+  }
+
+  .mdq\:pt-2{
+    padding-top: 0.5rem;
+  }
+
+  .mdq\:pt-20{
     padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .mdq\:text-3xl{
@@ -1054,49 +1040,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 1224px){
-  .lgq\:ml-10{
-    margin-left: 2.5rem;
-  }
-
-  .lgq\:ml-8{
-    margin-left: 2rem;
-  }
-
-  .lgq\:ml-36{
-    margin-left: 9rem;
-  }
-
-  .lgq\:ml-20{
-    margin-left: 5rem;
-  }
-
   .lgq\:ml-6{
     margin-left: 1.5rem;
-  }
-
-  .lgq\:ml-4{
-    margin-left: 1rem;
-  }
-
-  .lgq\:w-3\/4{
-    width: 75%;
-  }
-
-  .lgq\:w-2\/4{
-    width: 50%;
-  }
-
-  .lgq\:w-1\/4{
-    width: 25%;
-  }
-
-  .lgq\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .lgq\:py-32{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
   }
 }

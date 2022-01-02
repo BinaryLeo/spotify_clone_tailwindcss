@@ -32,8 +32,8 @@ module.exports = {
         "9xl": "9rem",
       },
       screens: {
-        'mdq': {'max': '767px'},
-        // => @media (max-width: 767px) { ... }
+        'mdq': {'max': '867px'},
+        // => @media (max-width: 867px) { ... }
         'smq': {'max': '639px'},
         // => @media (max-width: 639px) { ... }
         'lgq': {'max': '1224px'},
